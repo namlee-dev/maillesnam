@@ -1,0 +1,14 @@
+{
+  "name": "maillesnam",
+  "version": "1.0.0",
+  "description": "## Objectif",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "reset-css": "^5.0.1"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.29.0"
+  }
+}

@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-main;
+    color: $c-blue;
+    line-height: 1.5;
+    margin: $gutter-simple $gutter-simple*4;
+}
+
+main {
+    padding: $gutter-simple 0;
+}
+
+a {
+    color: $c-blue-green;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover {
+        color: $c-blue;
+        text-decoration: underline;
+    }
+
+    // TODO Try
+    // &:visited {
+    //     color: $c-pink;
+    // }
+}
+
+h1, h2, h3 {
+    font-family: $font-title;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+section {
+    padding: $gutter-simple 0;
+}

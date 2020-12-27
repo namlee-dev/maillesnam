@@ -1,0 +1,17 @@
+.button{
+
+    border: 3px $c-blue-green solid;
+    color: $c-blue-green;
+    display: inline-block;
+    margin: $gutter-half 0;
+    padding: $gutter-half;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background-image: $linear-gradient;
+        color: $c-blue;
+    }
+}

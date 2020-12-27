@@ -1,0 +1,78 @@
+ul {
+    padding-left: $gutter-double;
+}
+
+// DOC Search Bar Expand on Click-Test by Andrew
+// https://codepen.io/androojones/pen/JRqyRk
+
+/* Removes blue outline */
+.search__input {
+	outline: none;
+}
+
+/* gives shape to the .search__input */
+.search__input[type=text] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+
+.search__input::-webkit-search-decoration,
+.search__input::-webkit-search-cancel-button {
+	display: none;
+}
+
+.search__input[type=text] {
+	background: rgb(6,119,144, 0.2) url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 5px center;
+	border: solid 1px $c-blue-green;
+	padding: 5px 5px 5px 20px;
+	width: 50px;
+
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+.search__input:-moz-placeholder {
+	color: rgb(6,119,144, 0.2);
+}
+
+.search__input::-webkit-input-placeholder {
+	color: rgb(6,119,144, 0.2);
+}
+
+form {
+  width: 10%;
+}
+
+#magnify .search__input[type=text] {
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+
+#magnify .search__input[type=text]:hover {
+	background-color: rgb(6,119,144, 0.2);
+}
+
+#magnify .search__input[type=text]:focus {
+	width: 130px;
+	padding-left: 32px;
+	color: $c-blue-green;
+	background-color: rgb(6,119,144, 0.2);
+	cursor: auto;
+}
+
+#magnify .search__input:-moz-placeholder {
+	color: transparent;
+}
+
+#magnify .search__input::-webkit-input-placeholder {
+	color: transparent;
+}

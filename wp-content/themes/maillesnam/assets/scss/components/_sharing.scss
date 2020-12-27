@@ -1,0 +1,60 @@
+/*** CUSTOMISER LES BOUTONS DE PARTAGES ***/
+
+.msb-link {
+    padding: $gutter-half $gutter-simple !important;
+    color: $c-white;
+    margin-right: $gutter-half;
+    cursor: pointer;
+    margin-top: $gutter-half;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+.msb-link:hover,.msb-link:active {
+    background: $c-blue;
+    color: $c-white;
+    transition: all 0.3s ease-in;
+}
+
+.msb-link:visited {
+    color: $c_white;
+    transition: all 0.3s ease-in;
+}
+
+.msb-twitter {
+    background: #00aced;
+}
+
+.msb-facebook {
+    background: #3B5997;
+}
+
+.msb-pinterest {
+    background: #bd081c;
+}
+
+.msb-linkedin {
+    background: #0074A1;
+}
+
+.msb-email {
+    background: #878787;
+}
+
+.partage-reseaux-sociaux {
+    margin: $gutter-simple 0;
+    font-size: 0.6rem;
+
+    @include medium {
+        font-size: 0.8rem;
+    }
+}
+
+/*** CUSTOMISER LES BOUTONS DE PARTAGES POUR RESPONSIVE ***/
+
+@media only screen and (max-width: 680px) {
+
+/* placer ici votre CSS Responsive */
+
+}

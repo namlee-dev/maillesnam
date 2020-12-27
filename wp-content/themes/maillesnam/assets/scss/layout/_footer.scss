@@ -1,0 +1,22 @@
+.footer {
+    background-color: $c-blue-green;
+    padding: $gutter-simple;
+    color: $c-white;
+    text-align: center;
+
+    a {
+        color: $c-white;
+        cursor: pointer;
+        text-decoration: underline;
+        transition: all 0.2s;
+
+        &:hover {
+            color: $c-white;
+            text-decoration: underline;
+        }
+
+        &:visited {
+            color: $c-white;
+        }
+    }
+}

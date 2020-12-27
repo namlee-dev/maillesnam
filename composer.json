@@ -1,0 +1,39 @@
+{
+    "name": "nam-lee/maillesnam",
+    "authors": [
+        {
+            "name": "Nam Lee",
+            "email": "contact@namlee.fr"
+        }
+    ],
+    "extra": {
+        "wordpress-install-dir": "wp"
+    },
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org",
+            "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "^5.5",
+        "wpackagist-theme/twentytwenty": "^1.5"
+    },
+    "scripts": {
+        "build-assets":  "cd wp-content/themes/maillesnam/assets && parcel build js/main.js --public-url=./",
+
+        "permission": [
+            "sudo chown -R $USER:www-data .",
+            "sudo find . -type f -exec chmod 664 {} +",
+            "sudo find . -type d -exec chmod 775 {} +",
+            "sudo chmod 644 .htaccess"
+        ],
+        
+        "install": [
+            "cd wp-content/plugins/nom-du-plugin && composer dump-autoload",
+            "composer run build-assets"
+        ],
+        "test-maillesnam-activation": "wp plugin deactivate maillesnam && wp plugin activate maillesnam"
+    }
+}

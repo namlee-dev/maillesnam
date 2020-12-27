@@ -1,0 +1,33 @@
+.blog__article {
+    h1 {
+        color: $c-pink;
+    }
+}
+
+.excerpt {
+    border-bottom: 1px solid $c-blue-green;
+    display: flex;
+    flex-direction: column;
+
+    &__content {
+        a {
+            img {
+            width: 100%;
+            height: auto;
+            }
+        }
+
+        &--button {
+            margin-top: $gutter-simple;
+        }
+    }
+}
+
+.posts-navigation {
+    text-align: center;
+    margin-bottom: $gutter-simple;
+
+    a {
+        max-width: 80%;
+    }
+}

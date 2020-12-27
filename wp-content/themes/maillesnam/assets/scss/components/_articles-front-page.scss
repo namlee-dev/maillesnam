@@ -1,0 +1,24 @@
+.article {
+    border-bottom: 1px solid $c-blue-green;
+
+    h2 {
+        text-align: center;
+        margin: $gutter-simple 0;
+
+        a {
+            color: $c-blue;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .article__gallery {
+        padding-left: 0;
+        text-align: center;
+    }
+}

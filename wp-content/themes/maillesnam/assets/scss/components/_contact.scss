@@ -1,0 +1,68 @@
+.wpcf7 {
+    width: 100%;
+}
+
+.wpcf7-form  {
+    width: 100%;
+    label {
+        width: 50%;
+    }
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea
+{
+    background-color: $c-white;
+    color: $c-blue;
+    width: 50%;
+}
+.wpcf7-submit {
+    border: 3px $c-blue-green solid;
+    color: $c-blue-green;
+    display: inline-block;
+    padding: $gutter-half;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background-image: $linear-gradient;
+        color: $c-blue;
+    }
+}
+
+.wpcf7 form .wpcf7-response-output {
+    border: 2px solid $c-blue-green;
+}
+
+.wpcf7 form.init .wpcf7-response-output {
+    display: none;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: $c_green;
+}
+
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+    border-color: $c-pink
+}
+
+.wpcf7 form.spam .wpcf7-response-output {
+    border-color: $c-blue-green;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+    border-color: $c-pink
+}
+
+.wpcf7-not-valid-tip {
+    color: $c-pink;
+}
+
+.wpcf7-list-item {
+    margin: 0 !important;
+}

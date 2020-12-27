@@ -1,0 +1,30 @@
+.tutoriel__card {
+        background-image: url('~/assets/images/tutoriel.png');
+        height: 50vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    &--text {
+        background-color: #ffffff;
+        opacity: 0.8;
+        height: 50vh;
+        padding: $gutter-simple;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 2.5;
+
+        h1, p {
+            text-align: center;
+            color: $c-blue;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+    }
+
+    &--link {
+        text-align: center;
+    }
+}

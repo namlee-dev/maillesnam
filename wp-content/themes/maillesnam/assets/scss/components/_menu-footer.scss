@@ -1,0 +1,67 @@
+.menu__footer {
+    border-top: 1px solid $c-blue-green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include medium {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    &--newsletter {
+        width: 100%;
+
+        @include medium {
+            width: 50%;
+        }
+    }
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include medium {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__formulaire {
+        margin-right: $gutter-simple;
+        width: 100%;
+
+        @include medium {
+            width: 40%;
+        }
+    }
+
+    &__rgpd {
+        width: 100%;
+
+        p {
+            font-size: 0.8rem;
+        }
+
+        @include medium {
+            width: 60%;
+        }
+    }
+}
+
+#mailpoet_form_1 form.mailpoet_form  {
+    padding: $gutter-simple 0 !important;
+}
+
+.mailpoet_form {
+    width: 100%;
+}

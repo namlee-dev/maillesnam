@@ -1,0 +1,27 @@
+#commentform {
+    width: 100%;
+}
+
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+    display: flex;
+    flex-direction: column;
+}
+
+#submit {
+    border: 3px $c-blue-green solid;
+    color: $c-blue-green;
+    display: inline-block;
+    padding: $gutter-half;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background-image: $linear-gradient;
+        color: $c-blue;
+    }
+}

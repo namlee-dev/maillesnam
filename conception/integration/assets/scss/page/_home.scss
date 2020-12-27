@@ -1,0 +1,31 @@
+.blog__article {
+    padding: $gutter-simple 0;
+}
+.excerpt {
+    padding: $gutter-simple 0;
+    border-bottom: 1px solid $c-blue-green;
+
+
+    &__content {
+        display: flex;
+        justify-content: space-evenly;
+        padding: $gutter-simple 0;
+
+        a {
+            img {
+            width: 100%;
+            padding-right: $gutter-simple;
+            }
+        }
+    }
+}
+
+.posts-navigation {
+    text-align: center;
+    margin-bottom: $gutter-simple;
+
+    a {
+        padding: $gutter-simple;
+        max-width: 80%;
+    }
+}

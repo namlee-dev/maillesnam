@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    width: auto;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    font-family: $font-family-main;
+    color: $c-blue;
+    line-height: 2;
+}
+
+body.menu-visible {
+    header,
+    footer,
+    main {
+        filter: blur(15px);
+    }
+}
+
+a {
+    color: $c-pink;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover {
+        color: $c-blue;
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: $c-green;
+    }
+}
+
+h1, h2, h3, h4 {
+    font-family: $font-title;
+    color: $c-blue;
+}
+
+h1 {
+    font-size: 1.4rem;
+
+    @include medium {
+        font-size: 2rem;
+    }
+}
+
+h2 {
+    font-size: 1.3rem;
+
+    @include medium {
+        font-size: 1.8rem;
+    }
+}
+
+h3 {
+    font-size: 1.2rem;
+
+    @include medium {
+        font-size: 1.6rem;
+    }
+}
+
+h4 {
+    font-size: 1.1rem;
+
+    @include medium {
+        font-size: 1.4rem;
+    }
+}
+
+p {
+    font-size: 1rem;
+
+    @include medium {
+        font-size: 1.2rem;
+    }
+}
+
+section, nav, article {
+    padding: $gutter-simple 0;
+}
+
+.wp-post-image {
+    width: 100%;
+    height: auto;
+}
+
+.wp-block-image img {
+    width: 100%;
+    height: auto;
+}
+

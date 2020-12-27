@@ -1,0 +1,19 @@
+// Gutters
+$gutter-simple: 1rem;
+$gutter-half: calc(#{$gutter-simple} / 2);
+$gutter-double: calc(#{$gutter-simple} * 2);
+
+//Fonts
+$font-family-main: "Roboto Regular";
+$font-family-main-bold: "Roboto Bold";
+$font-family-main-italic: "Roboto Italic";
+$font-title: 'Leckerli One';
+
+// Colors
+$c-blue-green: #067790;
+$c-blue: #1f0690;
+$c-green: #779006;
+$c-pink: #900677;
+$c-white: #ffffff;
+
+$linear-gradient: linear-gradient(90deg, rgb(6,119,144, 0.5) 0%, rgb(144,6,119, 0.5) 100%);

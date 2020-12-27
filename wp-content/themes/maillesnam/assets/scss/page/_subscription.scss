@@ -1,0 +1,65 @@
+form.mailpoet-manage-subscription {
+    width: 100%;
+}
+
+form.mailpoet-manage-subscription .mailpoet_text_label,
+form.mailpoet-manage-subscription .mailpoet_select_label,
+form.mailpoet-manage-subscription .mailpoet_segment_label,
+form.mailpoet-manage-subscription .mailpoet_textarea_label{
+    display: block;
+    font-weight:bold;
+}
+form.mailpoet-manage-subscription .mailpoet_select,
+form.mailpoet-manage-subscription .mailpoet_text,
+form.mailpoet-manage-subscription .mailpoet_textarea{
+	width: 100%;
+	padding: 12px;
+}
+form.mailpoet-manage-subscription .mailpoet_paragraph{
+	margin-bottom:20px
+}
+
+.mailpoet_submit{
+    width: 100%;
+    border: 3px $c-blue-green solid !important;
+    color: $c-blue-green;
+    display: inline-block;
+    padding: $gutter-half;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background-image: $linear-gradient;
+        color: $c-blue;
+    }
+}
+
+.parsley-error {
+    background-color: rgb(144,6,119,0.2) !important;
+    color: $c-pink !important;
+}
+
+.parsley-custom-error-message {
+    color: $c-pink !important;
+    font-size: 0.8rem !important;
+}
+
+.parsley-success {
+    background-color: rgb(119,144,6,0.2) !important;
+    color: $c-green !important
+}
+
+.mailpoet_validate_success {
+    color: $c-green !important;
+    font-size: 0.8rem !important;
+}
+
+.mailpoet-submit-success {
+    color: $c-green !important;
+}
+
+.mailpoet_validate_error {
+    font-size: 0.8rem !important;
+}

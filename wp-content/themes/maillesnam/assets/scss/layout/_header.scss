@@ -1,0 +1,62 @@
+.header {
+    height: 50vh;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include small-only {
+        background-image: url('~/../images/header3.png');
+        ul {
+            padding-left: 0;
+        }
+    }
+
+    @include medium {
+        background-image: url('~/../images/header2.png');
+        ul {
+            padding-left: 0;
+        }
+    }
+
+    @include large {
+        background-image: url('~/../images/header1.png');
+    }
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $gutter-simple;
+    color: $c-white;
+
+    @include medium {
+        justify-content: space-between;
+    }
+
+    &__title {
+        display: none;
+
+        @include medium {
+            display: inline;
+            color: $c-white;
+        }
+    }
+}
+
+.social {
+    &__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            display: inline-block;
+        }
+
+        a {
+            color: $c-white;
+            margin: 0 $gutter-half;
+        }
+    }
+}

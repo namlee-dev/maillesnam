@@ -1,0 +1,51 @@
+#cookiescript_injected {
+    background-color: $c-blue-green !important;
+    font-family: $font-family-main !important;
+}
+
+#cookiescript_close {
+    font-family: $font-family-main !important;
+}
+
+#cookiescript_manage:hover
+#cookiescript_manageicon .cookiescript_gear {
+    fill: $c-green !important;
+}
+
+#cookiescript_accept, #cookiescript_save {
+    background-color: $c-green !important;
+}
+
+#cookiescript_reject {
+    background-color: $c-pink !important;
+    border: none !important;
+}
+
+#cookiescript_reject:hover {
+    background-color: $c-blue!important;
+}
+
+#cookiescript_accept:hover,
+#cookiescript_save:hover,
+#cookiescript_readmore:hover,
+#cookiescript_reportlink:hover,
+#cookiescript_cookiescriptlink:hover
+{
+    background-color: $c-blue !important;
+}
+
+#cookiescript_badgetext {
+    font-family: $font-family-main !important;
+}
+
+#cookiescript_declaration .cookiescript_active {
+    color: $c-green !important;
+}
+
+#cookiescript_maintabs .cookiescript_active {
+    color: $c-green !important;
+}
+
+#cookiescript_categories .cookiescript_active {
+    background: $c-green !important;
+}

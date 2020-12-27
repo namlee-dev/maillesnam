@@ -1,0 +1,31 @@
+.header {
+    background-image: url('~/assets/images/header.png');
+    height: 35vh;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: $gutter-simple;
+    color: $c-white;
+}
+
+.social {
+    &__links {
+        display: flex;
+        justify-content: center;
+
+        li {
+            display: inline-block;
+            margin: 0 $gutter-half;
+        }
+
+        a {
+            color: $c-white;
+        }
+    }  
+}
